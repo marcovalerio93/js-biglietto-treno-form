@@ -9,6 +9,72 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <section class="input-data">
+        <div class="row">
+            <div class="col">
+                <label for="fullname">
+                    Nome e Cognome
+                </label>
+                <input type="text" id="fullname"/>
+
+            </div>
+    
+            <div class="col">
+                <label for="km">
+                    Km da percorrere
+                </label>
+                <input type="number" min="1" step="1" id="km"/>
+    
+            </div>
+
+            <div class="col">
+                <label for="age">
+                    Fascia età
+                </label>
+                <select id="age">
+                    <option value="young">Under 18</option>
+                    <option value="young">Adults</option>
+                    <option value="young">Over 65</option>
+                </select>
+    
+            </div>
+
+        </div>
+        <div class="row">
+            <button id="generate">Vai</button>  
+            <button id="cancel"> Annulla</button>
+        </div>
+
+        
+
+    </section>
+
+    <section class="ticket">
+        <h1>Il Tuo Biglietto</h1>
+        <div class="row">
+            <div class="name">
+                <h2>Nome Passegero</h2>
+                <h3 id="passenger-name"></h3>
+            </div>
+            <table>
+                <tr>
+                    <th>offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo Biglietto</th>
+                </tr>
+                <tr>
+                    <td><span id="promo"></span></td>
+                    <td><span id="carrige"></span></td>
+                    <td><span id="prenotation-code"></span></td>
+                    <td><span id="ticked-price"></span></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
     
     <script src="js/main.js"></script>
 </body>
